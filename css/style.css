@@ -254,11 +254,23 @@ p { margin: 0; }
 @media (min-width: 768px) {
   .statement-grid { grid-template-columns: repeat(12, 1fr); }
   .statement-label { grid-column: span 3; }
-  .statement-copy { grid-column: span 9; }
+  .statement-portrait { grid-column: span 3; }
+  .statement-copy { grid-column: span 6; }
 }
 .statement-label {
   font-size: 9px; text-transform: uppercase; letter-spacing: 0.4em; color: var(--leak);
 }
+.statement-portrait {
+  position: relative; margin: 0; max-width: 260px;
+  aspect-ratio: 2 / 3; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #000;
+}
+.statement-portrait-img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+.statement-portrait-img.hover-img { opacity: 0; }
+.statement-portrait:hover .hover-img,
+.statement-portrait:focus-within .hover-img { opacity: 1; }
 .statement-quote {
   font-family: var(--font-display); font-style: italic;
   font-size: 1.5rem; line-height: 1.6; color: var(--white);
