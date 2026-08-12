@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Murray Death: Cinematic Photography &amp; Visual Artifacts</title>
+<meta name="description" content="Murray Death: cinematic street and film photography, Lightroom leaks, and visual artifacts. Moody, high-contrast archive of work shot across the U.S. and abroad." />
+<link rel="stylesheet" href="https://murraydeathdesigns.github.io/assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Developing loader (first paint only) -->
+  <div class="developing-loader">
+    <div class="text-center">
+      <div class="track"><div class="sweep"></div></div>
+      <p>Developing</p>
+    </div>
+  </div>
+
+  <div class="lens-flare" aria-hidden="true"></div>
+
+  <!-- ================= 01 · Aperture Hero ================= -->
+  <section id="aperture" class="hero grain-overlay">
+    <div class="hero-bg">
+      <img id="hero-bg-img" src="https://murraydeathdesigns.github.io/assets/images/hero/aperture.jpg" alt="Noir figure emerging from shadow" />
+      <div class="fade"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-line top">MURRAY</span>
+      <div class="hero-frame">
+        <img id="hero-frame-img" src="https://murraydeathdesigns.github.io/assets/images/hero/aperture.jpg" alt="Aperture still" class="animate-develop" />
+      </div>
+      <span class="hero-line bottom">DEATH</span>
+      <div class="hero-meta">Cinematic Photography &middot; Lightroom Leaks &middot; Visual Artifacts</div>
+    </div>
+
+    <div class="leak-border"></div>
+  </section>
+
+  <!-- ================= 01 · Statement ================= -->
+  <section id="statement" class="statement grain-overlay wrap-narrow">
+    <div class="leak-border" style="opacity:0.4"></div>
+    <div class="statement-grid reveal in-view">
+      <p class="statement-label">01 &middot; Statement</p>
+      <div class="statement-copy">
+        <p class="statement-quote">
+          I'm drawn to the world slightly askew from the norm: the light and
+          shadow, the contrasts, the small contradictions in places that
+          don't usually get a second look.
+        </p>
+        <p class="body">
+          A lot of what I shoot is everyday: storefronts, transit, the
+          objects people walk past without thinking. I'm interested in what
+          those things say about a place when you actually stop to look.
+        </p>
+        <p class="body">
+          Based in the Northeast U.S., but I shoot wherever I end up,
+          locally and abroad. Most of the work here is street and toy
+          camera/film photography, alongside some studio and digital pieces
+          under Artwork.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 · The Texture Gallery ================= -->
+  <section id="archive" class="gallery grain-overlay wrap">
+    <header class="gallery-header">
+      <div>
+        <p class="section-label">02 &middot; The Texture Gallery</p>
+        <h2 class="section-heading">It's Just Old Light</h2>
+      </div>
+      <p class="gallery-intro">
+        A masonry of cinematic stills. Hover to read the exposure data. Click
+        to dissolve the room into bokeh.
+      </p>
+    </header>
+
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+
+  <!-- Lightbox for the Texture Gallery -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop">
+      <img class="lightbox-bg-img" src="" alt="" />
+      <div class="tint"></div>
+    </div>
+    <figure>
+      <img class="lightbox-fig-img" src="" alt="" />
+      <figcaption>
+        <span class="name"></span>
+        <span class="exif"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox-close focus-ring" aria-label="Close"></button>
+  </div>
+
+  <!-- ================= 03 · The Leak Vault ================= -->
+  <section id="leaks" class="vault grain-overlay">
+    <header class="vault-header wrap">
+      <div>
+        <p class="section-label">03 &middot; The Leak Vault</p>
+        <h2 class="section-heading">Lightroom Leaks</h2>
+      </div>
+      <div class="side">
+        <p class="vault-intro">Scroll the negatives. Each develops on hover. Every link opens its album.</p>
+        <div class="vault-scroll-btns">
+          <button id="vault-prev" class="focus-ring" aria-label="Scroll left">&larr;</button>
+          <button id="vault-next" class="focus-ring" aria-label="Scroll right">&rarr;</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="vault-scroller hide-scrollbar" id="vault-scroller"></div>
+
+    <div class="vault-more wrap">
+      <a href="https://lightroom.adobe.com" target="_blank" rel="noopener noreferrer" class="focus-ring">
+        View All Albums
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= 04 · The Chronicle ================= -->
+  <section id="chronicle" class="chronicle grain-overlay wrap">
+    <header>
+      <p class="section-label">04 &middot; The Chronicle</p>
+      <h2 class="section-heading">A Field Notebook</h2>
+    </header>
+
+    <figure class="chronicle-frame reveal in-view" id="chronicle-frame">
+      <!-- slides injected by home.js -->
+      <div class="scanlines" style="position:absolute;inset:0;opacity:0.2;pointer-events:none;"></div>
+      <figcaption id="chronicle-caption">Frame 001 &middot; Artwork</figcaption>
+      <div class="chronicle-dots" id="chronicle-dots"></div>
+    </figure>
+
+    <div class="chronicle-body">
+      <div class="chronicle-text">
+        <p class="pull-quote">&ldquo;A sketch is a thought made visible. The finished piece is just the sketch that stopped moving.&rdquo;</p>
+        <p class="body">
+          Murray Death draws in the margins: ballpoint creatures, ink
+          studies, the half-formed things that surface between commissions.
+          The notebook is not a gallery. It is a continuous sketch.
+        </p>
+        <p class="body">
+          Artwork and stuff gathers the loose pages: character sketches,
+          texture studies, abortive comics, and the occasional finished
+          piece. They are offered here as artifacts, not portfolio: the raw
+          ledger of a hand thinking on paper.
+        </p>
+      </div>
+      <aside class="chronicle-aside">
+        <div class="log">
+          <p class="log-title">Exposure Log</p>
+          <ul>
+            <li><span>Series</span><span class="val">Artwork</span></li>
+            <li><span>Pages</span><span class="val" id="chronicle-pages">25</span></li>
+            <li><span>Medium</span><span class="val">Ink &amp; Ballpoint</span></li>
+            <li><span>Years</span><span class="val">2021&ndash;25</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= 05 · Collaboration Footer ================= -->
+  <footer id="collaborate" class="site-footer grain-overlay">
+    <div class="inner">
+      <p class="section-label">05 &middot; Call to Collaboration</p>
+      <h2 class="reveal in-view">Let&rsquo;s make<br />something dark.</h2>
+
+      <a href="mailto:hello@murraydeath.com" class="footer-cta focus-ring">
+        hello@murraydeath.com
+      </a>
+
+      <div class="footer-grid">
+        <div class="col">
+          <span class="label">Index</span>
+          <a href="#aperture" class="focus-ring">Aperture</a>
+          <a href="#archive" class="focus-ring">Archive</a>
+          <a href="#leaks" class="focus-ring">Leaks</a>
+          <a href="https://murraydeathdesigns.github.io/assets/cameras.html" class="focus-ring">Cameras</a>
+        </div>
+        <div class="col">
+          <span class="label">Channels</span>
+          <a href="https://www.instagram.com/murraydeath" target="_blank" rel="noopener noreferrer" class="focus-ring">Instagram</a>
+          <a href="https://lightroom.adobe.com" target="_blank" rel="noopener noreferrer" class="focus-ring">Lightroom</a>
+          <a href="mailto:hello@murraydeath.com" class="focus-ring">Email</a>
+        </div>
+        <div class="col">
+          <span class="label">Studio</span>
+          <span class="muted">By appointment</span>
+          <span class="muted">Worldwide</span>
+        </div>
+        <div class="col">
+          <span class="label">Colophon</span>
+          <span class="muted">Chrome Noir</span>
+          <span class="muted">Archive v1.0</span>
+        </div>
+      </div>
+
+      <p class="copyright" id="copyright">&copy; 2026 Murray Death &middot; All frames reserved</p>
+    </div>
+    <div class="leak-border"></div>
+  </footer>
+
+  <!-- ================= Command Bar ================= -->
+  <nav class="command-bar">
+    <div class="bar glass-bar">
+      <div class="meta">
+        <span class="idx text-leak">01 / 05</span>
+        <span class="clock"></span>
+      </div>
+      <div class="nav">
+        <a href="#aperture" data-section="aperture" class="focus-ring">Aperture</a>
+        <a href="#archive" data-section="archive" class="focus-ring">Archive</a>
+        <a href="#leaks" data-section="leaks" class="focus-ring">Leaks</a>
+        <a href="#chronicle" data-section="chronicle" class="focus-ring">Chronicle</a>
+        <a href="#collaborate" data-section="collaborate" class="focus-ring">Collab</a>
+        <a href="https://murraydeathdesigns.github.io/assets/cameras.html" class="focus-ring cameras-link">Cameras</a>
+      </div>
+      <div class="brand">M<span class="text-leak">&middot;</span>D</div>
+    </div>
+  </nav>
+
+  <div style="height:6rem"></div>
+
+  <script src="https://murraydeathdesigns.github.io/assets/js/icons.js"></script>
+  <script src="https://murraydeathdesigns.github.io/assets/js/data.js"></script>
+  <script src="https://murraydeathdesigns.github.io/assets/js/main.js"></script>
+  <script src="https://murraydeathdesigns.github.io/assets/js/home.js"></script>
+  <script>
+    document.getElementById("chronicle-pages").textContent = CHRONICLE_SLIDES.length;
+    document.getElementById("copyright").innerHTML =
+      "&copy; " + new Date().getFullYear() + " Murray Death &middot; All frames reserved";
+  </script>
+</body>
+</html>
