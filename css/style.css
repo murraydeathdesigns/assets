@@ -426,13 +426,14 @@ p { margin: 0; }
 .film-strip .sprockets { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.6); padding: 0.25rem 0.5rem; }
 .film-strip .sprockets span { height: 0.5rem; width: 0.75rem; background: rgba(255,255,255,0.08); }
 
-.vault-more { margin: 2.5rem auto 0; }
-.vault-more a {
+.vault-more { margin: 2.5rem auto 0; text-align: center; }
+.vault-more-cta {
   display: inline-flex; align-items: center; gap: 0.5rem;
+  border: 1px solid rgba(0,240,255,0.3); padding: 0.75rem 1.75rem;
   font-size: 11px; text-transform: uppercase; letter-spacing: 0.3em; color: var(--leak);
-  transition: opacity 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
-.vault-more a:hover { opacity: 0.7; }
+.vault-more-cta:hover { background: var(--leak); color: #070707; }
 
 /* ==========================================================================
    04 · Chronicle
